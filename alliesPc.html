@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Enregistrement PC</title>
+   <link rel="stylesheet" href="structurepc.css">
+   
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Formulaire d'Enregistrement PC</h1>
+            <p>Veuillez remplir toutes les informations requises</p>
+        </div>
+        
+        <form method="post" action="" name="pc-form">
+            <!-- Informations Personnelles -->
+            <div class="form-section">
+                <h2 class="section-title">Informations Personnelles</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nom">Nom *</label>
+                        <input type="text" id="nom" name="nom"  required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom *</label>
+                        <input type="text" id="prenom" name="prenom"  >
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="organisation">Organisation *</label>
+                        <select id="organisation" name="organisation" required>
+                                <option value="">Sélectionnez l'organnisation</option>
+                                <option value="Mmie">Mmie</option>
+                                <option value="Mission local">Mission local</option>
+                                <option value="Allies">Allies</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="poste">Poste occupé *</label>
+                        <input type="text" id="poste" name="poste" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email professionnel *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date_embauche">Date d'embauche *</label>
+                        <input type="date" id="date_embauche" name="date_embauche" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="departement">Département *</label>
+                        <input type="text" id="departement" name="departement" required>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Informations PC -->
+            <div class="form-section">
+                <h2 class="section-title">Informations PC</h2>
+                
+                <div class="pc-section">
+                    <h3 class="pc-title">PC Principal</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pc_type">Type d'ordinateur *</label>
+                            <select id="pc_type" name="pc_type" required>
+                                <option value="">Sélectionnez le type</option>
+                                <option value="portable">Portable</option>
+                                <option value="bureau">Bureau</option>
+                                <option value="ultrabook">Ultrabook</option>
+                                <option value="workstation">Station de travail</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pc_marque">Marque *</label>
+                            <select id="pc_marque" name="pc_marque" required>
+    <option value="">Sélectionnez la marque</option>
+    <optgroup label="Marques Grand Public">
+        <option value="dell">Dell</option>
+        <option value="hp">HP</option>
+        <option value="lenovo">Lenovo</option>
+        <option value="acer">Acer</option>
+        <option value="asus">ASUS</option>
+        <option value="msi">MSI</option>
+        <option value="toshiba">Toshiba</option>
+        <option value="samsung">Samsung</option>
+    </optgroup>
+    <optgroup label="Marques Professionnelles">
+        <option value="dell_precision">Dell Precision</option>
+        <option value="hp_zbook">HP ZBook</option>
+        <option value="lenovo_thinkpad">Lenovo ThinkPad</option>
+        <option value="apple_macbook">Apple MacBook</option>
+        <option value="microsoft_surface">Microsoft Surface</option>
+        <option value="fujitsu">Fujitsu</option>
+        <option value="panasonic_toughbook">Panasonic Toughbook</option>
+    </optgroup>
+    <optgroup label="Marques Gaming">
+        <option value="alienware">Alienware</option>
+        <option value="razer">Razer</option>
+        <option value="asus_rog">ASUS ROG</option>
+        <option value="msi_gaming">MSI Gaming</option>
+        <option value="gigabyte_aorus">Gigabyte AORUS</option>
+        <option value="acer_predator">Acer Predator</option>
+    </optgroup>
+    <optgroup label="Marques Station de Travail">
+        <option value="dell_workstation">Dell Workstation</option>
+        <option value="hp_workstation">HP Workstation</option>
+        <option value="lenovo_thinkstation">Lenovo ThinkStation</option>
+        <option value="apple_mac_pro">Apple Mac Pro</option>
+        <option value="supermicro">Supermicro</option>
+    </optgroup>
+    <optgroup label="Autres Marques">
+        <option value="sony">Sony</option>
+        <option value="lg">LG</option>
+        <option value="huawei">Huawei</option>
+        <option value="xiaomi">Xiaomi</option>
+        <option value="chuwi">Chuwi</option>
+        <option value="medion">Medion</option>
+        <option value="packard_bell">Packard Bell</option>
+        <option value="autre">Autre marque</option>
+    </optgroup>
+</select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pc_modele">Modèle/couleur *</label>
+                            <input type="text" id="pc_modele" name="pc_modele" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pc_numero_serie">Numéro de série *</label>
+                            <input type="text" id="pc_numero_serie" name="pc_numero_serie" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pc_date_acquisition">Date d'acquisition *</label>
+                            <input type="date" id="pc_date_acquisition" name="pc_date_acquisition" required>
+                        </div>
+                    </div>
+                    
+                    <h4 class="pc-title" style="margin-top: 1.5rem;">Spécifications techniques</h4>
+                    <div class="specs-grid">
+                        <div class="form-group">
+                            <label for="pc_processeur">Processeur</label>
+                           <select id="pc_processeur" name="pc_processeur" required>
+    <option value="">Sélectionnez le processeur</option>
+    <optgroup label="Intel Core i3">
+        <option value="i3_12100">Intel Core i3-12100</option>
+        <option value="i3_13100">Intel Core i3-13100</option>
+        <option value="i3_14100">Intel Core i3-14100</option>
+    </optgroup>
+    <optgroup label="Intel Core i5">
+        <option value="i5_12400">Intel Core i5-12400</option>
+        <option value="i5_13400">Intel Core i5-13400</option>
+        <option value="i5_14400">Intel Core i5-14400</option>
+        <option value="i5_12600K">Intel Core i5-12600K</option>
+        <option value="i5_13600K">Intel Core i5-13600K</option>
+        <option value="i5_14600K">Intel Core i5-14600K</option>
+    </optgroup>
+    <optgroup label="Intel Core i7">
+        <option value="i7_12700K">Intel Core i7-12700K</option>
+        <option value="i7_13700K">Intel Core i7-13700K</option>
+        <option value="i7_14700K">Intel Core i7-14700K</option>
+    </optgroup>
+    <optgroup label="Intel Core i9">
+        <option value="i9_12900K">Intel Core i9-12900K</option>
+        <option value="i9_13900K">Intel Core i9-13900K</option>
+        <option value="i9_14900K">Intel Core i9-14900K</option>
+    </optgroup>
+    <optgroup label="AMD Ryzen 3">
+        <option value="r3_5300G">AMD Ryzen 3 5300G</option>
+        <option value="r3_7300X">AMD Ryzen 3 7300X</option>
+    </optgroup>
+    <optgroup label="AMD Ryzen 5">
+        <option value="r5_5600G">AMD Ryzen 5 5600G</option>
+        <option value="r5_5600X">AMD Ryzen 5 5600X</option>
+        <option value="r5_7600X">AMD Ryzen 5 7600X</option>
+        <option value="r5_8600G">AMD Ryzen 5 8600G</option>
+    </optgroup>
+    <optgroup label="AMD Ryzen 7">
+        <option value="r7_5700G">AMD Ryzen 7 5700G</option>
+        <option value="r7_5800X">AMD Ryzen 7 5800X</option>
+        <option value="r7_7700X">AMD Ryzen 7 7700X</option>
+        <option value="r7_7800X3D">AMD Ryzen 7 7800X3D</option>
+    </optgroup>
+    <optgroup label="AMD Ryzen 9">
+        <option value="r9_5900X">AMD Ryzen 9 5900X</option>
+        <option value="r9_7900X">AMD Ryzen 9 7900X</option>
+        <option value="r9_7950X">AMD Ryzen 9 7950X</option>
+        <option value="r9_7900X3D">AMD Ryzen 9 7900X3D</option>
+    </optgroup>
+    <optgroup label="Processeurs Professionnels">
+        <option value="xeon_w5_2455X">Intel Xeon W5-2455X</option>
+        <option value="xeon_w7_2475X">Intel Xeon W7-2475X</option>
+        <option value="xeon_w9_3495X">Intel Xeon W9-3495X</option>
+        <option value="threadripper_7960X">AMD Threadripper 7960X</option>
+        <option value="threadripper_7970X">AMD Threadripper 7970X</option>
+        <option value="threadripper_7980X">AMD Threadripper 7980X</option>
+    </optgroup>
+    <optgroup label="Processeurs Économiques">
+        <option value="celeron_g6900">Intel Celeron G6900</option>
+        <option value="pentium_gold_g7400">Intel Pentium Gold G7400</option>
+        <option value="athlon_gold_7220U">AMD Athlon Gold 7220U</option>
+    </optgroup>
+</select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pc_ram">Mémoire RAM (Go)</label>
+                            <select id="pc_ram" name="pc_ram">
+                                <option value="">Sélectionnez la RAM</option>
+                                <option value="4">4</option>
+                                <option value="8">8</option>
+                                <option value="16">16</option>
+                                <option value="32">32</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pc_stockage">Stockage (Go)</label>
+                           <select id="pc_stockage" name="pc_stockage" required>
+    <option value="">Sélectionnez la capacité</option>
+    <option value="128">128 Go</option>
+    <option value="256">256 Go</option>
+    <option value="512">512 Go</option>
+    <option value="1024">1 To</option>
+    <option value="2048">2 To</option>
+    <option value="4096">4 To</option>
+    <option value="8192">8 To</option>
+    <option value="16000">16 To</option>
+    <option value="32000">32 To</option>
+</select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pc_systeme">Système d'exploitation</label>
+                            <select id="pc_systeme" name="pc_systeme">
+                                <option value="">Sélectionnez l'OS</option>
+                                <option value="windows10">Windows 10</option>
+                                <option value="windows11">Windows 11</option>
+                                <option value="macos">macOS</option>
+                                <option value="linux">Linux</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pc_etat">État de l'équipement *</label>
+                            <select id="pc_etat" name="pc_etat" required>
+                                <option value="">Sélectionnez l'état</option>
+                                <option value="neuf">Neuf</option>
+                                <option value="bon">Bon état</option>
+                                <option value="moyen">État moyen</option>
+                                <option value="reparation">En réparation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pc_date_attribution">Date d'attribution *</label>
+                            <input type="date" id="pc_date_attribution" name="pc_date_attribution" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="btn-container">
+                <button type="submit" class="btn">Enregistrer les informations</button>
+            </div>
+        </form>
+         </div>
+         <script src="alliesPc.js"></script>
+    <!-- 🔙 Bouton retour à l'accueil -->
+        <div class="back-home">
+            <a href="index.html" class="btn">⬅ Retour à l'accueil</a>
+        </div>
+
+</body>
+</html>
